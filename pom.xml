@@ -12,9 +12,9 @@
     <modules>
         <module>java-common</module>
         <module>java-starter</module>
-        <module>java-demo</module>
         <module>jeecg-common</module>
         <module>java-dependencies</module>
+        <module>jeecg-starter</module>
     </modules>
     <artifactId>java-parent</artifactId>
     <properties>
@@ -24,34 +24,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.encoding>UTF-8</project.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
     </properties>
-
-    <profiles>
-        <profile>
-            <id>test</id>
-            <properties>
-                <active.profile>test</active.profile>
-                <buildDate>${maven.build.timestamp}</buildDate>
-            </properties>
-        </profile>
-        <profile>
-            <id>prod</id>
-            <properties>
-                <active.profile>prod</active.profile>
-                <buildDate>${maven.build.timestamp}</buildDate>
-            </properties>
-        </profile>
-        <profile>
-            <id>dev</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <buildDate>${maven.build.timestamp}</buildDate>
-            </properties>
-        </profile>
-    </profiles>
 
     <distributionManagement>
         <repository>

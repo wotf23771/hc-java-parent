@@ -53,7 +53,7 @@ public class RedisCacheCustomizer implements RedisCacheManagerBuilderCustomizer 
             if ("java".equals(cacheDefine.getValueSerializer())) {
                 config = config.serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(RedisSerializer.java()));
             } else if ("json".equals(cacheDefine.getValueSerializer())) {
-                config = config.serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(RedisSerializer.json()));
+                config = config.serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(new JsonRedisSerializer()));
             }
         }
         return config;
