@@ -12,9 +12,7 @@
     <modules>
         <module>java-common</module>
         <module>java-starter</module>
-        <module>jeecg-common</module>
         <module>java-dependencies</module>
-        <module>jeecg-starter</module>
     </modules>
     <artifactId>java-parent</artifactId>
     <properties>
