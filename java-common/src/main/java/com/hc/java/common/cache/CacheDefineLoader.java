@@ -14,9 +14,8 @@ public class CacheDefineLoader {
 
     public static List<CacheDefine> loadCacheDefine() {
         try {
-            String str = ResourceUtil.readUtf8Str("classpath:cache.json");//ResourceUtils.getFile("classpath:cache.json");
-            //            String str = FileUtils.readFileToString(file, "UTF-8");
-            return JsonUtils.fromJson(str, new TypeReference<List<CacheDefine>>() {
+            String str = ResourceUtil.readUtf8Str("classpath:cache.json");
+            return JsonUtils.fromJson(str, new TypeReference<>() {
             });
         } catch (Exception e) {
             log.error("找不到cache.json配置文件");

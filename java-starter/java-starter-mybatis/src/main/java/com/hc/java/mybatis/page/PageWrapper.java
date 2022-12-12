@@ -30,7 +30,7 @@ public class PageWrapper {
     }
 
     /**
-     * 将MybatisPage 对象 转换为 公共 Page 对象
+     * 将 MybatisPage 对象 转换为 公共 Page 对象
      *
      * @param mybatisPage MybatisPage 对象
      * @param <T>         分页对象中数据类型
