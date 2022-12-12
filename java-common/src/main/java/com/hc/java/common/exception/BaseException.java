@@ -1,6 +1,6 @@
 package com.hc.java.common.exception;
 
-import com.hc.java.common.result.ResultCode;
+import com.hc.java.common.constant.ResultCode;
 
 /**
  * 基础异常

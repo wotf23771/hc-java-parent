@@ -1,4 +1,4 @@
-package com.hc.java.common.result;
+package com.hc.java.common.constant;
 
 /**
  * Web 响应状态码

@@ -1,6 +1,6 @@
 package com.hc.java.common.exception;
 
-import com.hc.java.common.result.ResultCode;
+import com.hc.java.common.constant.ResultCode;
 
 /**
  * 岗位用户未找到异常
